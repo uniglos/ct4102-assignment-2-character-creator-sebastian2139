@@ -14,7 +14,14 @@ class CREATORTEMPLATE_API AMyTestActor : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AMyTestActor();
+	int Number = 0;
+	float Decimal = 1.0f;
+	FVector coord = { 0, 1,0 };
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Attributes)
+
+	FString name = "name";
+	 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
